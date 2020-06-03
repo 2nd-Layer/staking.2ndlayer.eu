@@ -66,7 +66,8 @@ footer {
 #site-content {
   padding: 1rem 2rem;
   flex: auto;
-  background-image: url(./kraken-background.webp);
+  background-image: blue;
+  background-repeat: no-repeat;
 }
 
 .navbar {
