@@ -7,9 +7,9 @@
           </div>
           <div class="navbar-end">
             <div class="navbar-end">
-              <a class="navbar-item is-hoverable title is-4" href="/overview/">Overview</a>
-              <a class="navbar-item is-hoverable title is-4" href="/cardano-stake-pool/">Cardano Stake Pool</a>
-              <a class="navbar-item is-hoverable title is-4" href="/tezos-bakery/">Tezos Bakery</a>
+              <span><a class="navbar-item is-hoverable title is-4" href="/overview/">Overview</a></span>
+              <span><a class="navbar-item is-hoverable title is-4" href="/cardano-stake-pool/">Cardano Stake Pool</a></span>
+              <span><a class="navbar-item is-hoverable title is-4" href="/tezos-bakery/">Tezos Bakery</a></span>
             </div>
           </div>
         </nav>
