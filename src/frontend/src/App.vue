@@ -15,10 +15,10 @@
         </nav>
     </header>
     <div id="site-content">
-      <article class="message is-success">
+      <article class="message is-success" style="width: 30%;">
         <div class="message-body">
           <strong>2ⁿᵈ Layer Staking Services</strong> is a value-added Staking Services provider for
-          <strong>Proof of Stake</strong> cryptocirrencies.
+          <strong>Proof of Stake</strong> cryptocurrencies.
         </div>
       </article>
     </div>
