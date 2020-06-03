@@ -45,7 +45,7 @@ export default {
 
 <style>
 footer {
-  background-color: #2c7df7;
+  background-color: rgba(3, 191, 215, 0.75);
   flex-shrink: 0;
   padding: 1rem;
   width: 100%;
@@ -77,8 +77,7 @@ footer {
 }
 
 .navbar {
-  background-color: white;
-  opacity: 0.6;
+  background-color: rgba(40, 98, 147, 0.6);
 }
 
 .navbar-item.logo {
