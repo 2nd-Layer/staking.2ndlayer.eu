@@ -15,7 +15,7 @@
         </nav>
     </header>
     <div id="site-content">
-      <article class="message is-success has-background-transparent" style="width: 30%;">
+      <article class="message has-background-transparent" style="width: 30%;">
         <div class="message-body has-text-white">
           <strong>2ⁿᵈ Layer Staking Services</strong> is a value-added Staking Services provider for
           <strong>Proof of Stake</strong> cryptocurrencies.
