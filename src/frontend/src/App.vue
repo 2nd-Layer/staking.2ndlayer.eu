@@ -7,15 +7,20 @@
           </div>
           <div class="navbar-end">
             <div class="navbar-end">
-              <a class="navbar-item is-hoverable title is-4" href="/commits/">Commits</a>
-              <a class="navbar-item is-hoverable title is-4" href="/code-quality/">Code Quality</a>
-              <a class="navbar-item is-hoverable title is-4" href="/resources/">Resources</a>
-              <a class="navbar-item is-hoverable title is-4" href="/about/">About</a>
+              <a class="navbar-item is-hoverable title is-4" href="/overview/">Overview</a>
+              <a class="navbar-item is-hoverable title is-4" href="/code-quality/">Cardano</a>
+              <a class="navbar-item is-hoverable title is-4" href="/resources/">Tezos</a>
             </div>
           </div>
         </nav>
     </header>
     <div id="site-content">
+      <article class="message is-success">
+        <div class="message-body">
+          <strong>2ⁿᵈ Layer Staking Services</strong> is a value-added Staking Services provider for
+          <atrong>Proof of Stake</strong> cryptocirrencies.
+        </div>
+      </article>
     </div>
     <footer>
       <div class="columns">
