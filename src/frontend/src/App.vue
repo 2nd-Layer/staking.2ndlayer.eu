@@ -8,8 +8,8 @@
           <div class="navbar-end">
             <div class="navbar-end">
               <a class="navbar-item is-hoverable title is-4" href="/overview/">Overview</a>
-              <a class="navbar-item is-hoverable title is-4" href="/code-quality/">Cardano</a>
-              <a class="navbar-item is-hoverable title is-4" href="/resources/">Tezos</a>
+              <a class="navbar-item is-hoverable title is-4" href="/cardano-stake-pool/">Cardano Stake Pool</a>
+              <a class="navbar-item is-hoverable title is-4" href="/tezos-bakery/">Tezos Bakery</a>
             </div>
           </div>
         </nav>
