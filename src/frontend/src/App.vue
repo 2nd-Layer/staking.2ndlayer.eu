@@ -10,6 +10,18 @@
               <span><a class="navbar-item is-hoverable title is-4" href="/overview/">Overview</a></span>
               <span><a class="navbar-item is-hoverable title is-4" href="/cardano-stake-pool/">Cardano Stake Pool</a></span>
               <span><a class="navbar-item is-hoverable title is-4" href="/tezos-bakery/">Tezos Bakery</a></span>
+              <a class="navbar-item" href="https://www.facebook.com/2ndlayer.eu/">
+                <i class="fab fa-facebook-square title"></i>
+              </a>
+              <a class="navbar-item" href="https://www.linkedin.com/company/2ndlayer/">
+                <i class="fab fa-linkedin title"></i>
+              </a>
+              <a class="navbar-item" href="https://github.com/2nd-Layer">
+                <i class="fab fa-github-square title"></i>
+              </a>
+              <a class="navbar-item" href="https://www.youtube.com/channel/UCncyGaCH5emsxroa3-YIb_A/">
+                <i class="fab fa-youtube-square title"></i>
+              </a>
             </div>
           </div>
         </nav>
