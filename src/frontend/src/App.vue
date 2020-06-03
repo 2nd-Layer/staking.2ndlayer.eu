@@ -61,7 +61,7 @@ footer {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: url('https://www.kraken.com/_assets/files/2019-02//kraken_desktop_hero/2048.webp')
+  background-image: url('https://www.kraken.com/_assets/files/2019-02//kraken_desktop_hero/2048.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
