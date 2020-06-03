@@ -69,7 +69,8 @@ footer {
 }
 
 .navbar {
-  background-color: rgb(18, 50, 98);
+  background-color: white;
+  opacity: 0.6;
 }
 
 .navbar-item.logo {
