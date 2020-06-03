@@ -61,13 +61,13 @@ footer {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-image: blue;
+  background-repeat: no-repeat;
 }
 
 #site-content {
   padding: 1rem 2rem;
   flex: auto;
-  background-image: blue;
-  background-repeat: no-repeat;
 }
 
 .navbar {
