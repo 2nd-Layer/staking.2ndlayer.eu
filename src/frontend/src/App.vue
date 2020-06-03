@@ -18,7 +18,7 @@
       <article class="message is-success">
         <div class="message-body">
           <strong>2ⁿᵈ Layer Staking Services</strong> is a value-added Staking Services provider for
-          <atrong>Proof of Stake</strong> cryptocirrencies.
+          <strong>Proof of Stake</strong> cryptocirrencies.
         </div>
       </article>
     </div>
