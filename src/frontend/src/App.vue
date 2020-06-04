@@ -51,10 +51,10 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
   data(){
     return {
-      mySVG: require('./assets/2nd_Layer_Staking_Services_Long_No_Border_Text_Transparent.svg')
+      2ndLayerStakingServicesLogoSVG: require('./assets/2nd_Layer_Staking_Services_Long_No_Border_Text_Transparent.svg')
     }
   }
 };
