@@ -3,7 +3,7 @@
     <header>
         <nav class="navbar is-spaced" role="navigation" aria-label="dropdown main navigation">
           <div class="navbar-brand">
-            <img class="navbar-item" :src="StakingServicesLogoSVG" style="height: 100px;" />
+            <img class="navbar-item logo" :src="StakingServicesLogoSVG" />
           </div>
           <div class="navbar-end">
             <div class="navbar-end">
@@ -99,6 +99,8 @@ footer {
 
 .navbar-item.logo {
   padding: 0px;
+  height: 70px;
+  filter: brightness(0) invert(1);
 }
 
 .has-background-transparent {
