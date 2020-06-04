@@ -3,7 +3,7 @@
     <header>
         <nav class="navbar is-spaced" role="navigation" aria-label="dropdown main navigation">
           <div class="navbar-brand">
-            <!-- navbar items, navbar burger... -->
+            <img class="navbar-item" :src="2ndLayerStakingServicesLogoSVG" style="height: 100px;" />
           </div>
           <div class="navbar-end">
             <div class="navbar-end">
@@ -52,6 +52,11 @@
 <script>
 export default {
   name: 'App'
+  data(){
+    return {
+      mySVG: require('./assets/2nd_Layer_Staking_Services_Long_No_Border_Text_Transparent.svg')
+    }
+  }
 };
 </script>
 
