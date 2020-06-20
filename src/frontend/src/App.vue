@@ -39,7 +39,7 @@
       <section class="section" id="cardano">
         <div class="columns is-ancestor">
           <div class="column">
-            <h2 class="title is-half has-text-left has-text-white">About Cardano</h2>
+            <h2 class="title is-2 has-text-left has-text-white">About Cardano</h2>
             <div class="container">
               <div class="content has-text-left has-text-white">
                 <figure class="image is-pulled-right is-128x128">
