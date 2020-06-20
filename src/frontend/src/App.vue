@@ -27,12 +27,60 @@
         </nav>
     </header>
     <div id="site-content">
-      <article class="message has-background-transparent" style="width: 30%;">
-        <div class="message-body has-text-white">
-          <strong>2ⁿᵈ Layer Staking Services</strong> is a value-added Staking Services provider for
-          <strong>Proof of Stake</strong> cryptocurrencies.
+      <section class="section" id="opening">
+        <article class="content has-background-transparent" style="width: 30%;">
+          <div class="content has-text-white">
+            <strong>2ⁿᵈ Layer Staking Services</strong> is a value-added Staking Services provider for
+            <strong>Proof of Stake</strong> cryptocurrencies.
+          </div>
+        </article>
+      </section>
+      <hr class="is-fullwidth" />
+      <section class="section" id="cardano">
+        <h2 class="title is-2 has-text-left has-text-white">About Cardano</h2>
+        <div class="container">
+          <div class="content has-text-left has-text-white">
+            <figure class="image is-pulled-right is-128x128">
+              <img class="image symbol is-mono-white" :src="CardanoCoinADASymbolSVG" />
+            </figure>
+            <p>
+              <strong>Cardano</strong> (<strong>ADA</strong>) is a <strong>Proof of Stake</strong> blockchain with on-chain governance and support for smart contracts. It's written in a high-assurance Haskell programming language best suited for mission-critical applications. It aspires to be the <strong>global financial operating system</strong>.
+            </p>
+            <p>The development of this 3<sup>rd</sup> generation blockchain platform is done using the scientific method in partherships with leading academic institutions. Most, if not all relevant primary research is undergoing peer-review process, and a large portion of the research is presented at leading scientific conferences.</p>
+          </div>
         </div>
-      </article>
+      </section>
+      <hr class="is-fullwidth" />
+      <section class="section" id="tezos">
+        <h2 class="title is-2 has-text-left has-text-white">About Tezos</h2>
+        <div class="container">
+          <div class="content has-text-left has-text-white">
+            <figure class="image is-pulled-left is-128x128">
+              <img class="image symbol is-mono-white" :src="TezosCoinXTZSymbolSVG" />
+            </figure>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr class="is-fullwidth" />
+      <section class="section" id="ending">
+        <h2 class="title is-2 has-text-left has-text-white">Our value proposition</h2>
+        <div class="container">
+          <div class="content has-text-left has-text-white">
+            <p>
+              Donec volutpat rutrum ligula, quis volutpat massa varius vitae. Fusce dolor urna, volutpat in vulputate ac, rutrum non nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor, diam vel consectetur sagittis, nulla eros dapibus tellus, placerat dictum ante nisi eu diam. Maecenas eu commodo libero. Sed consequat varius orci vitae sodales. Fusce eleifend gravida pulvinar. Nulla eleifend ullamcorper nisi, ut luctus diam pellentesque a. Suspendisse accumsan venenatis lorem quis viverra. Morbi et neque nisi.
+            </p>
+            <p>
+              Nulla facilisi. Mauris et vehicula dolor. Donec volutpat mattis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed lacus elit, accumsan eu erat at, finibus gravida risus. Quisque sit amet auctor ipsum, vitae dictum metus. Integer accumsan congue dolor scelerisque ultrices.
+            </p>
+            <p>
+              Morbi at ante sit amet tortor venenatis euismod et eu nunc. Suspendisse faucibus metus vel vulputate fringilla. Aenean laoreet sem at libero fermentum, eget pretium nibh venenatis. Mauris eget convallis ligula, eu auctor lectus. Donec vel volutpat felis. Donec faucibus a ligula in aliquam. Sed sed mollis libero, at auctor magna. Aliquam ut ultrices augue, ac rhoncus urna. Integer suscipit magna nec neque vehicula, ac pharetra dui commodo. Sed lectus lacus, finibus eget blandit in, fringilla id ligula. Pellentesque in eros lectus. Nam interdum suscipit elementum. Nulla efficitur ex dui, sed molestie ligula tempus a. Duis bibendum leo id dolor laoreet dapibus. Mauris non eros non magna consequat viverra. Vestibulum venenatis euismod tempor.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
     <footer>
       <div class="columns">
@@ -54,7 +102,9 @@ export default {
   name: 'App',
   data() {
     return {
-      StakingServicesLogoSVG: require('./assets/2nd_Layer_Staking_Services_Long_No_Border_Text_Transparent.svg')
+      StakingServicesLogoSVG: require('./assets/2nd_Layer_Staking_Services_Long_No_Border_Text_Transparent.svg'),
+      CardanoCoinADASymbolSVG: require('./assets/Cardano-coin-ADA-symbol.svg'),
+      TezosCoinXTZSymbolSVG: require('./assets/Tezos-coin-XTZ-symbol.svg')
     }
   }
 };
@@ -66,6 +116,16 @@ footer {
   flex-shrink: 0;
   padding: 1rem;
   width: 100%;
+}
+
+img.is-mono-white {
+    filter: brightness(0) invert(1);
+}
+
+hr.is-fullwidth {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
 }
 
 #site {
