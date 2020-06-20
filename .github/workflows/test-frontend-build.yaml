@@ -1,0 +1,26 @@
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
+  push:
+    branches:
+      branches-ignore:
+        - master
+  pull_request:
+    branches:
+        - master
+
+name: Test frontend build
+
+jobs:
+  docker-build:
+    name: Build frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Build frontend
+        run: |
+          pushd src/frontend
+          npm install
+          npm run build
+          popd
