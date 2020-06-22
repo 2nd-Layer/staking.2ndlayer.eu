@@ -30,37 +30,43 @@
       <section class="section" id="opening">
         <article class="content has-background-transparent" style="width: 30%;">
           <div class="content has-text-white">
-            <strong>2ⁿᵈ Layer Staking Services</strong> is a value-added Staking Services provider for
+            <strong>2<sup>nd</sup> Layer Staking Services</strong> is a value-added Staking Services provider for
             <strong>Proof of Stake</strong> cryptocurrencies.
           </div>
         </article>
       </section>
       <hr class="is-fullwidth" />
       <section class="section" id="cardano">
-        <h2 class="title is-2 has-text-left has-text-white">About Cardano</h2>
-        <div class="container">
-          <div class="content has-text-left has-text-white">
-            <figure class="image is-pulled-right is-128x128">
-              <img class="image symbol is-mono-white" :src="CardanoCoinADASymbolSVG" />
-            </figure>
-            <p>
-              <strong>Cardano</strong> (<strong>ADA</strong>) is a <strong>Proof of Stake</strong> blockchain with on-chain governance and support for smart contracts. It's written in a high-assurance Haskell programming language best suited for mission-critical applications. It aspires to be the <strong>global financial operating system</strong>.
-            </p>
-            <p>The development of this 3<sup>rd</sup> generation blockchain platform is done using the scientific method in partherships with leading academic institutions. Most, if not all relevant primary research is undergoing peer-review process, and a large portion of the research is presented at leading scientific conferences.</p>
+        <div class="columns is-ancestor">
+          <div class="column">
+            <h2 class="title is-2 has-text-left has-text-white">About Cardano</h2>
+            <div class="container">
+              <div class="content has-text-left has-text-white">
+                <figure class="image is-pulled-right is-128x128">
+                  <img class="image symbol is-mono-white" :src="CardanoCoinADASymbolSVG" />
+                </figure>
+                <p>
+                  <strong>Cardano</strong> (<strong>ADA</strong>) is a <strong>Proof of Stake</strong> blockchain with on-chain governance and support for smart contracts. It's written in a high-assurance Haskell programming language best suited for mission-critical applications. It aspires to be the <strong>global financial operating system</strong>.
+                </p>
+                <p>The development of this 3<sup>rd</sup> generation blockchain platform is done using the scientific method in partherships with leading academic institutions. Most, if not all relevant primary research is undergoing peer-review process, and a large portion of the research is presented at leading scientific conferences.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <hr class="is-fullwidth" />
-      <section class="section" id="tezos">
-        <h2 class="title is-2 has-text-left has-text-white">About Tezos</h2>
-        <div class="container">
-          <div class="content has-text-left has-text-white">
-            <figure class="image is-pulled-left is-128x128">
-              <img class="image symbol is-mono-white" :src="TezosCoinXTZSymbolSVG" />
-            </figure>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+          <div class="column  is-half">
+            <h2 class="title is-2 has-text-left has-text-white">About Tezos</h2>
+            <div class="container">
+              <div class="content has-text-left has-text-white">
+                <figure class="image is-pulled-right is-128x128">
+                  <img class="image symbol is-mono-white" :src="TezosCoinXTZSymbolSVG" />
+                </figure>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <p>
+                  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -82,7 +88,7 @@
         </div>
       </section>
     </div>
-    <footer>
+    <footer class="footer">
       <div class="columns">
         <div class="column is-one-half">
         </div>
@@ -111,7 +117,7 @@ export default {
 </script>
 
 <style>
-footer {
+footer.footer {
   background-color: rgba(3, 191, 215, 0.75);
   flex-shrink: 0;
   padding: 1rem;
