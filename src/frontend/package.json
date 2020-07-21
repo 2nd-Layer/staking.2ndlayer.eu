@@ -1,0 +1,15 @@
+{
+  "name": "staking.2ndlayer.eu",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt build && nuxt export"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "nuxt": "^2.13.3",
+    "nuxt-buefy": "^0.3.31"
+  }
+}
