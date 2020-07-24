@@ -47,6 +47,7 @@ export default {
 
 <style>
 .navbar {
+  background-color: rgba(40, 98, 147,0.90);
   padding-bottom: 0px;
 }
 
