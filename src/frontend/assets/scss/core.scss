@@ -1,3 +1,4 @@
+@import "~bulma";
 @import 'abstracts/theme-default';
 @import 'abstracts/colors';
 @import 'abstracts/animations';
@@ -45,4 +46,6 @@
     }
 }
 
-@import "~bulma";
+.navbar {
+    background-color: rgba(40, 98, 147,0.90);
+}
