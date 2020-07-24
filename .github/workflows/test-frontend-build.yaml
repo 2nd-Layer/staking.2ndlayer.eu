@@ -20,5 +20,5 @@ jobs:
         run: |
           pushd src/frontend
           npm install
-          npm run build
+          npm run generate
           popd

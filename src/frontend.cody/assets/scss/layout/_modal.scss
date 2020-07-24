@@ -1,0 +1,11 @@
+.modal-content {
+  .card {
+    background-color: #1c004c;
+    border-radius: 3px;
+    color: #fff;
+
+    button.is-token:hover > img {
+        filter: brightness(0);
+    }
+  }
+}

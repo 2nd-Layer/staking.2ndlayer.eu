@@ -1,45 +1,26 @@
 {
-  "name": "staking-2ndlayer-eu",
-  "version": "0.1.0",
+  "name": "staking.2ndlayer.eu",
   "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2nd-Layer/staking.2ndlayer.eu.git"
   },
-  "dependencies": {
-    "buefy": "^0.8.20",
-    "core-js": "^3.6.5",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.0",
-    "vue": "^2.6.11",
-    "vue-router": "^3.3.2"
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "serve": "nuxt serve",
+    "generate": "nuxt build && nuxt export"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.1",
-    "@vue/cli-plugin-eslint": "~4.4.1",
-    "@vue/cli-service": "~4.4.1",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.1.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+    "@nuxt/core": "^2.13.3",
+    "@nuxt/generator": "^2.13.3",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "nuxt": "^2.13.3",
+    "nuxt-buefy": "^0.3.31",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2"
+  }
 }
