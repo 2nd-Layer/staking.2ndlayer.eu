@@ -3,13 +3,14 @@
   "private": true,
   "license": "AGPL-3.0-or-later",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/2nd-Layer/staking.2ndlayer.eu.git"
+    "type": "git",
+    "url": "https://github.com/2nd-Layer/staking.2ndlayer.eu.git"
   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "serve": "nuxt serve",
     "generate": "nuxt build && nuxt export"
   },
   "devDependencies": {
@@ -18,6 +19,8 @@
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.13.3",
-    "nuxt-buefy": "^0.3.31"
+    "nuxt-buefy": "^0.3.31",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2"
   }
 }
