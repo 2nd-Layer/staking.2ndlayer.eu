@@ -1,2 +1,49 @@
+@import 'abstracts/theme-default';
+@import 'abstracts/colors';
+@import 'abstracts/animations';
+@import 'components/buttons';
+
+/* ==========================================================================
+0. Video pulsating button
+========================================================================== */
+
+.video-button {
+    position: relative;
+    height: 54px;
+    width: 54px;
+    @include secondary-gradient-right();
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+    //Play icon
+    img {
+        position: relative;
+        display: block;
+        width: 24px;
+        height: 24px;
+        left: 2px;
+        z-index: 3;
+    }
+    //Pulsating pseudo element
+    &:after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 12px);
+        left: calc(50% - 12px);
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        @include secondary-gradient-right(); 
+        animation: pulse 1.6s infinite;
+        animation-duration: 2s;
+        transform-origin: center center ;
+        z-index: 0;
+    }
+}
+
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

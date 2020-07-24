@@ -16,7 +16,12 @@
           <span><a class="navbar-item is-hoverable" href="/">Overview</a></span>
           <span><a class="navbar-item is-hoverable" href="/cardano-stake-pool/">Cardano Stake Pool</a></span>
           <span><a class="navbar-item is-hoverable" href="/tezos-bakery/">Tezos Bakery</a></span>
-          <span><a class="navbar-item is-hoverable" href="/begin-staking-now/">Begin Staking Now</a></span>
+          <div class="navbar-item is-nav-link">
+            <a href="/begin-staking-now/" class="button k-button k-primary raised has-gradient slanted">
+              <span class="text">Begin Staking Now</span>
+              <span class="front-gradient"></span>
+            </a>
+          </div>
           <a class="navbar-item" href="https://twitter.com/2nd_Layer">
           <i class="fab fa-twitter-square title"></i>
           </a>

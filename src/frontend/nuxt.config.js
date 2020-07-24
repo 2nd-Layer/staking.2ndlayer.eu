@@ -14,6 +14,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' },
+      { rel: 'apple-touch-icon-precomposed', sizes: '57x57', href: '/images/apple-touch-icon-57x57.png' },
       {
         rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'
