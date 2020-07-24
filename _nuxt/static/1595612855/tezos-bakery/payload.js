@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tezos-bakery", {data:[{}],fetch:[],mutations:void 0});
