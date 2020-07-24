@@ -9,7 +9,7 @@ export default {
         }]
       ],
     sitemap: {
-        hostname: 'https://thestorageguy.2ndlayer.eu',
+        hostname: 'https://staking.2ndlayer.eu',
         gzip: true,
       },
 }
