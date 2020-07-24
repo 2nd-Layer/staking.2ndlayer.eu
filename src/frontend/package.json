@@ -1,5 +1,11 @@
 {
   "name": "staking.2ndlayer.eu",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/2nd-Layer/staking.2ndlayer.eu.git"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
