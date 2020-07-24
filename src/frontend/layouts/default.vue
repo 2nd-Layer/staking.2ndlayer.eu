@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <particles-bg type="cobweb" :bg="true" />
     <Header/>
     <nuxt/>
     <Footer/>

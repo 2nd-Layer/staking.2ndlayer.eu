@@ -1,5 +1,6 @@
 export default {
   target: 'static', // default: 'server'
+  mode: 'spa',
   components: true,
   /*
   ** Headers of the page
@@ -39,4 +40,7 @@ export default {
   css: [
     '@/assets/scss/core.scss'
   ],
+  plugins: [
+    '@/plugins/particles'
+  ]
 }
