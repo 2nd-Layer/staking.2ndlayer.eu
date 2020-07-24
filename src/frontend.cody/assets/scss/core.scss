@@ -1,0 +1,18 @@
+@import 'abstracts/theme-default';
+@import 'abstracts/colors';
+@import 'abstracts/animations';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'layout/layout';
+@import 'layout/modal';
+@import 'layout/features';
+@import 'layout/timeline';
+@import 'layout/team';
+@import 'layout/faq';
+@import 'layout/blog';
+@import 'layout/footer';
+@import 'layout/pageloader';
+@import 'layout/responsive';
+
+$slick-font-path: "/assets/fonts/";
+$slick-loader-path: "/assets/fonts/";
