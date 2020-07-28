@@ -4,18 +4,27 @@
 @import 'abstracts/animations';
 @import 'components/buttons';
 @import 'components/features';
+@import 'components/footer';
+@import 'components/navbar';
 
 /* ==========================================================================
 0. Body
 ========================================================================== */
 
 .landing-wrapper {
-  background: url(../images/bg/gradient-left-darker.png) repeat-y top left, url(../images/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
+  background:
+    url(../images/bg/gradient-left-darker.png) repeat-y top left,
+    url(../images/bg/gradient-right-darker.png) repeat-y top right,
+    #1c004c;
   color: #fff;
 }
 
 .page-wrapper {
-  background: url(../images/bg/bg-token-top.png) no-repeat top center, url(../images/bg/bg-token-left.png) no-repeat top left, url(../images/bg/bg-token-bottom.png) no-repeat bottom right, #1c004c;
+  background:
+    url(../images/bg/bg-token-top.png) no-repeat top center,
+    url(../images/bg/bg-token-left.png) no-repeat top left,
+    url(../images/bg/bg-token-bottom.png) no-repeat bottom right,
+    #1c004c;
   color: #fff;
 }
 
@@ -27,7 +36,9 @@
   min-height: 100vh;
 }
 
-.hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
+.hero.is-halfheight .hero-body,
+.hero.is-fullheight .hero-body,
+.hero.is-fullheight-with-navbar .hero-body {
   align-items: center;
   display: flex;
 }
@@ -36,152 +47,9 @@
   text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.1);
 }
 
-//Navbar
-.navbar {
-  position: relative;
-  min-height: 4rem;
-  transition: all .3s;
-  z-index: 99;
-
-  .container {
-    min-height: 4rem;
-  }
-
-  //Responsive menu icon
-  .navbar-burger {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  //Brand
-  .navbar-brand {
-    min-height: 4rem;
-
-    img {
-      max-height: 50px !important;
-      height: 50px;
-    }
-
-    //Removing navbar item default hover behaviour
-    &:hover {
-      .navbar-item {
-        background: transparent !important;
-      }
-    }
-  }
-
-  //Navbar items
-  .navbar-item {
-    a.button {
-      font-family: 'Cabin', sans-serif;
-      text-transform: uppercase;
-
-      &.hover {
-        font-size: .75rem !important;
-        font-weight: 500 !important;
-      }
-    }
-
-    //Nav link modifier
-    &.is-nav-link {
-      a {
-        font-family: 'Cabin', sans-serif;
-        text-transform: uppercase;
-        font-size: .75rem;
-      }
-    }
-
-    a.is-active {
-      color: $secondary;
-    }
-  }
-
-  //Color modifiers
-  &.is-light, &.is-dark {
-    .navbar-brand {
-      .brand-name {
-        color: $white;
-      }
-
-      .navbar-link::after {
-        border-color: $white;
-      }
-    }
-
-    .navbar-item {
-      a {
-        color: $white;
-      }
-    }
-
-    .navbar-burger span {
-      background-color: $white !important;
-    }
-
-    //Responsive menu
-    .navbar-menu {
-      &.is-active {
-        position: absolute;
-        width: 100%;
-      }
-    }
-  }
-
-  //Fixed navbar modifier
-  &.is-fixed {
-    min-height: 4rem !important;
-    background: $white;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
-
-    a {
-      color: $dark-text;
-
-      &:hover {
-        color: $primary;
-      }
-    }
-
-    //Dark modifier
-    &.is-dark {
-      background: #2d0275 !important;
-
-      a {
-        color: $white;
-
-        &:hover {
-          color: #fcfcfc;
-        }
-      }
-
-      .navbar-menu {
-        &.is-active {
-          background: #2d0275 !important;
-        }
-      }
-    }
-  }
-}
-
-
-//Cloned fixed navbar
-#navbar-clone {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transform: translateY(-100%);
-  z-index: 100;
-
-  &.is-active {
-    transform: translateY(0);
-  }
-}
-
-
 /* ==========================================================================
 1. Video section
 ========================================================================== */
-
 .video-wrapper {
   background-color: rgba(127, 0, 255, 0.9);
   border-radius: 25px;
@@ -300,194 +168,5 @@
   //Acts as a spacing element
   &.is-spacer {
     margin-top: 120px;
-  }
-}
-
-.footer {
-  padding: 100px 40px;
-  background: #0f0330;
-  text-align: center;
-  position: relative;
-  //Solar system background
-  .solar-system {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 50%;
-    z-index: 0;
-  }
-
-  //Footer logo
-  .footer-logo {
-    img {
-      height: 75px;
-    }
-
-    //Brand
-    .brand-name {
-      font-family: 'Cabin', sans-serif;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: $white;
-      padding: 5px 0;
-      font-size: 1.4rem;
-      letter-spacing: 3px;
-    }
-
-    //Motto
-    .brand-subtitle {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: .65rem;
-      color: $primary;
-    }
-  }
-
-  //Footer columns
-  .footer-columns {
-    padding: 40px 0;
-    position: relative;
-    z-index: 1;
-    //Subscribe form
-    .subscribe-block {
-      //Title
-      .subscribe-title {
-        padding: 10px 0;
-        font-family: 'Open Sans', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: .55rem;
-        color: $secondary;
-      }
-
-      //Form control
-      .control {
-        position: relative;
-        width: 100%;
-        //Input
-        .krypton-subscribe-input {
-          height: 50px;
-          width: 100%;
-          background: rgba(17, 149, 247, .08);
-          border: 1px solid rgba(0, 83, 251, .5);
-          border-radius: 100px;
-          -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .5), 0 0 25px 0 rgba(18, 60, 255, .16);
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .5), 0 0 25px 0 rgba(18, 60, 255, .16);
-          padding: 5px 130px 5px 30px;
-          color: $white;
-          transition: all .4s;
-
-          &:focus, &:active {
-            outline: none !important;
-            border: 1px solid rgba(0, 83, 251, .8) !important;
-            -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .5), 0 0 25px 0 rgba(18, 60, 255, .26) !important;
-            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .5), 0 0 25px 0 rgba(18, 60, 255, .26) !important;
-          }
-        }
-
-        //Button
-        button {
-          display: block;
-          position: absolute;
-          right: 4px;
-          top: 5px;
-          color: $white;
-          @include secondary-gradient-right();
-          border: none;
-          height: 40px;
-          padding: 0 26px;
-          text-transform: uppercase;
-          font-family: 'Cabin', sans-serif;
-          font-weight: 500;
-          border-radius: 100px;
-          cursor: pointer;
-          transition: all .3s;
-
-          &:focus, &:active {
-            outline: none !important;
-          }
-
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-      }
-    }
-
-    //Navigation links
-    .footer-links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      //Link element
-      li {
-        a {
-          position: relative;
-          text-transform: uppercase;
-          font-family: 'Cabin', sans-serif;
-          font-weight: 500;
-          font-size: .8rem;
-          color: $white;
-          padding: 10px 0;
-
-          &:before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            -webkit-transform-origin: right center;
-            -ms-transform-origin: right center;
-            transform-origin: right center;
-            height: 2px;
-            background: $secondary;
-            background: -webkit-linear-gradient(to right, $secondary, $secondary-accent) !important;
-            background: linear-gradient(to right, $secondary, $secondary-accent) !important;
-            -webkit-transform: scale(0, 1);
-            -ms-transform: scale(0, 1);
-            transform: scale(0, 1);
-            -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          }
-
-          //Hover state
-          &:hover {
-            &:before {
-              -webkit-transform-origin: left center;
-              -ms-transform-origin: left center;
-              transform-origin: left center;
-              -webkit-transform: scale(1, 1);
-              -ms-transform: scale(1, 1);
-              transform: scale(1, 1);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  //Copyright section
-  .k-copyright {
-    position: relative;
-    color: $primary;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .85rem;
-    z-index: 2;
-  }
-
-  //Coded by section
-  .coded-by {
-    position: relative;
-    color: $white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .7rem;
-    z-index: 2;
-
-    a {
-      color: $secondary;
-    }
   }
 }
