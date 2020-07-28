@@ -3,7 +3,7 @@
     <div class="columns has-text-centered">
       <div class="column is-6 is-offset-3">
         <div class="token-image mb-40">
-          <img src="@/assets/images/coins/Tezos-coin-XTZ-symbol.svg">
+          <img :src="tezosLogo" alt="Tezos Logo">
         </div>
         <br>
         <h1 class="title is-2 is-light is-semibold is-spaced main-title">Tezos Bakery</h1>
@@ -82,3 +82,13 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      tezosLogo: require('@/assets/images/coins/Tezos-coin-XTZ-symbol.svg')
+    }
+  }
+}
+</script>

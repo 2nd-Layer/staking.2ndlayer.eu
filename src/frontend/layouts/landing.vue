@@ -14,10 +14,10 @@
           <div class="container">
             <div class="is-centered coin-list">
               <a href="https://cardano.org/" target="_blank">
-                <img class="hero-logo" src="@/assets/images/coins/Cardano-coin-ADA-symbol.svg" alt="Cardano">
+                <img class="hero-logo" :src="cardanoLogo" alt="Cardano Logo">
               </a>
               <a href="#">
-                <img class="hero-logo" src="@/assets/images/coins/Tezos-coin-XTZ-symbol.svg" alt="">
+                <img class="hero-logo" :src="tezosLogo" alt="Tezos Logo">
               </a>
             </div>
           </div>
@@ -31,7 +31,9 @@
   export default {
     data() {
       return {
-        color: ["#5507fc"]
+        color: ["#5507fc"],
+        cardanoLogo: require('@/assets/images/coins/Cardano-coin-ADA-symbol.svg'),
+        tezosLogo: require('@/assets/images/coins/Tezos-coin-XTZ-symbol.svg')
       };
     },
     head() {

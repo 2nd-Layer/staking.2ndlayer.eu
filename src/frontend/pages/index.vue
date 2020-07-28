@@ -22,11 +22,11 @@
           <div class="video-wrapper">
             <div class="video-container">
               <!--              <div class="video-button levitate js-modal-btn" data-video-id="6WG7D47tGb0">-->
-              <!--                <img src="@/assets/img/icons/play.svg" alt="">-->
+              <!--                <img :src="playButton" alt="">-->
               <!--              </div>-->
 
               <div class="video-button levitate">
-                <img src="@/assets/images/icons/play.svg" alt="">
+                <img :src="playButton" alt="Play Button">
               </div>
               <h2 class="text-center">
                 Intro coming soon...
@@ -41,6 +41,11 @@
 
 <script>
   export default {
-    layout: 'landing'
+    layout: 'landing',
+    data() {
+      return {
+        playButton: require('@/assets/images/icons/play.svg')
+      };
+    }
   }
 </script>

@@ -3,7 +3,7 @@
     <div class="columns has-text-centered">
       <div class="column is-6 is-offset-3">
         <div class="token-image mb-40">
-          <img src="@/assets/images/coins/Cardano-coin-ADA-symbol.svg">
+          <img :src="cardanoLogo" alt="Cardano Logo">
         </div>
         <br>
         <h1 class="title is-2 is-light is-semibold is-spaced main-title">Cardano Stake Pool</h1>
@@ -32,7 +32,8 @@
 
                 <h3 class="title is-4 is-light">Network Governance</h3>
                 <div class="divider"></div>
-                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
+                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit.
+                  Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
               </div>
             </div>
 
@@ -54,7 +55,8 @@
 
                 <h3 class="title is-4 is-light">Value Stacking</h3>
                 <div class="divider"></div>
-                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
+                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit.
+                  Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
               </div>
             </div>
           </div>
@@ -66,7 +68,8 @@
 
                 <h3 class="title is-4 is-light">Increased Security</h3>
                 <div class="divider"></div>
-                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
+                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit.
+                  Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
               </div>
             </div>
 
@@ -82,3 +85,13 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      cardanoLogo: require('@/assets/images/coins/Cardano-coin-ADA-symbol.svg')
+    }
+  }
+}
+</script>

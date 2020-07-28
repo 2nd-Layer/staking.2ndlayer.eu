@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="footer-logo">
         <a href="#">
-          <img src="@/assets/images/2ndLayer-logo.svg" alt="">
+          <img :src="logo" alt="">
           <div class="brand-subtitle">Multi-Ledger Staking Services</div>
         </a>
       </div>
@@ -15,11 +15,11 @@
           <!-- Links group -->
           <ul class="footer-links">
             <li>
-              <a href="/cardano-staking-pool">Cardano Staking Pool</a>
+              <nuxt-link to="/cardano-staking-pool">Cardano Staking Pool</nuxt-link>
             </li>
 
             <li>
-              <a href="/tezos-bakery">Tezos Bakery</a>
+              <nuxt-link to="/tezos-bakery">Tezos Bakery</nuxt-link>
             </li>
 
           </ul>
@@ -58,7 +58,17 @@
     </div>
 
     <!-- Absolute image -->
-    <img class="solar-system" src="@/assets/images/bg/solar.svg" alt="">
+    <img class="solar-system" :src="solarSystem" alt="N/A">
   </footer>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      logo: require('@/assets/images/2ndLayer-logo.svg'),
+      solarSystem: require('@/assets/images/bg/solar.svg')
+    }
+  }
+}
+</script>
