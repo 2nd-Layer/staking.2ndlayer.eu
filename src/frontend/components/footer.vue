@@ -15,7 +15,7 @@
           <!-- Links group -->
           <ul class="footer-links">
             <li>
-              <nuxt-link to="/cardano-stake-pool">Cardano Staking Pool</nuxt-link>
+              <nuxt-link to="/cardano-stake-pool">Cardano Stake Pool</nuxt-link>
             </li>
 
             <li>
