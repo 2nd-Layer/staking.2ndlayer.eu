@@ -4,9 +4,9 @@
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
-        <a href="index.html" class="navbar-item">
-          <img src="@/assets/img/logo/2ndlayer-logo.svg" alt="">
-        </a>
+        <nuxt-link to="/" class="navbar-item">
+          <img :src="logo" alt="2nd Layer Staking Services Logo">
+        </nuxt-link>
         <!-- Responsive toggle -->
         <ResponsiveToggle/>
       </div>
@@ -37,5 +37,10 @@
         isMobileMenuToggled: 'responsive-toggle/isMobileMenuToggled'
       })
     },
+    data() {
+      return {
+        logo: require('@/assets/images/2ndLayer-logo.svg')
+      };
+    }
   }
 </script>

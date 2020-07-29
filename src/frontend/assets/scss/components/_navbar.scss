@@ -1,0 +1,141 @@
+
+//Navbar
+.navbar {
+  position: relative;
+  min-height: 4rem;
+  transition: all .3s;
+  z-index: 99;
+
+  .container {
+    min-height: 4rem;
+  }
+
+  //Responsive menu icon
+  .navbar-burger {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  //Brand
+  .navbar-brand {
+    min-height: 4rem;
+
+    img {
+      max-height: 50px !important;
+      height: 50px;
+    }
+
+    //Removing navbar item default hover behaviour
+    &:hover {
+      .navbar-item {
+        background: transparent !important;
+      }
+    }
+  }
+
+  //Navbar items
+  .navbar-item {
+    a.button {
+      font-family: 'Cabin', sans-serif;
+      text-transform: uppercase;
+
+      &.hover {
+        font-size: .75rem !important;
+        font-weight: 500 !important;
+      }
+    }
+
+    //Nav link modifier
+    &.is-nav-link {
+      a {
+        font-family: 'Cabin', sans-serif;
+        text-transform: uppercase;
+        font-size: .75rem;
+      }
+    }
+
+    a.is-active {
+      color: $secondary;
+    }
+  }
+
+  //Color modifiers
+  &.is-light, &.is-dark {
+    .navbar-brand {
+      .brand-name {
+        color: $white;
+      }
+
+      .navbar-link::after {
+        border-color: $white;
+      }
+    }
+
+    .navbar-item {
+      a {
+        color: $white;
+      }
+    }
+
+    .navbar-burger span {
+      background-color: $white !important;
+    }
+
+    //Responsive menu
+    .navbar-menu {
+      &.is-active {
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+
+  //Fixed navbar modifier
+  &.is-fixed {
+    min-height: 4rem !important;
+    background: $white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+
+    a {
+      color: $dark-text;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    //Dark modifier
+    &.is-dark {
+      background: #2d0275 !important;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: #fcfcfc;
+        }
+      }
+
+      .navbar-menu {
+        &.is-active {
+          background: #2d0275 !important;
+        }
+      }
+    }
+  }
+}
+
+
+//Cloned fixed navbar
+#navbar-clone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  z-index: 100;
+
+  &.is-active {
+    transform: translateY(0);
+  }
+}

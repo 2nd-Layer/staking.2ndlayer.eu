@@ -1,47 +1,172 @@
-@import "~bulma";
 @import 'abstracts/theme-default';
+@import "~bulma";
 @import 'abstracts/colors';
 @import 'abstracts/animations';
 @import 'components/buttons';
+@import 'components/features';
+@import 'components/footer';
+@import 'components/navbar';
 
 /* ==========================================================================
-0. Video pulsating button
+0. Body
 ========================================================================== */
 
-.video-button {
-    position: relative;
-    height: 54px;
-    width: 54px;
-    @include secondary-gradient-right();
-    border-radius: 50%;
-    margin: 0 auto;
+.landing-wrapper {
+  background:
+    url(../images/bg/gradient-left-darker.png) repeat-y top left,
+    url(../images/bg/gradient-right-darker.png) repeat-y top right,
+    #1c004c;
+  color: #fff;
+}
+
+.page-wrapper {
+  background:
+    url(../images/bg/bg-token-top.png) no-repeat top center,
+    url(../images/bg/bg-token-left.png) no-repeat top left,
+    url(../images/bg/bg-token-bottom.png) no-repeat bottom right,
+    #1c004c;
+  color: #fff;
+}
+
+#site-content {
+  min-height: 100vh;
+}
+
+.hero.is-fullheight {
+  min-height: 100vh;
+}
+
+.hero.is-halfheight .hero-body,
+.hero.is-fullheight .hero-body,
+.hero.is-fullheight-with-navbar .hero-body {
+  align-items: center;
+  display: flex;
+}
+
+.title.main-title {
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.1);
+}
+
+/* ==========================================================================
+1. Video section
+========================================================================== */
+.video-wrapper {
+  background-color: rgba(127, 0, 255, 0.9);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    z-index: 2;
-    cursor: pointer;
-    //Play icon
-    img {
-        position: relative;
-        display: block;
-        width: 24px;
-        height: 24px;
-        left: 2px;
-        z-index: 3;
+    justify-content: center;
+
+    h2 {
+      color: white;
+      font-size: 1.25em;
+      font-weight: bold;
+      margin-top: 30px;
     }
-    //Pulsating pseudo element
-    &:after {
-        content: '';
-        position: absolute;
-        top: calc(50% - 12px);
-        left: calc(50% - 12px);
-        height: 24px;
-        width: 24px;
-        border-radius: 50%;
-        @include secondary-gradient-right(); 
-        animation: pulse 1.6s infinite;
-        animation-duration: 2s;
-        transform-origin: center center ;
-        z-index: 0;
-    }
+  }
+}
+
+.video-button {
+  position: relative;
+  height: 54px;
+  width: 54px;
+  @include secondary-gradient-right();
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  //Play icon
+  img {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    z-index: 3;
+  }
+
+  //Pulsating pseudo element
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    @include secondary-gradient-right();
+    animation: pulse 1.6s infinite;
+    animation-duration: 2s;
+    transform-origin: center center;
+    z-index: 0;
+  }
+}
+
+/* ==========================================================================
+2. Coin list
+========================================================================== */
+.coin-list {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  a:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  img {
+    filter: brightness(0.75);
+    height: 50px;
+  }
+}
+
+
+/* ==========================================================================
+4. Token pages
+========================================================================== */
+
+.token-image img {
+  height: 220px;
+}
+
+
+//Divider
+.divider {
+  height: 3px;
+  width: 75px;
+  @include primary-gradient-left();
+  margin: 20px 0;
+  //Centered modifier
+  &.is-centered {
+    margin: 20px auto;
+  }
+
+  //Long modifier
+  &.is-long {
+    width: 150px;
+  }
+
+  //Acts as a spacing element
+  &.is-spacer {
+    margin-top: 120px;
+  }
 }

@@ -1,4 +1,4 @@
 <template>
-  <div id="site-content">
+  <div>
   </div>
 </template>
