@@ -3,8 +3,8 @@
     <div class="container">
       <!-- Logo -->
       <div class="footer-logo">
-        <a href="#">
-          <img :src="logo" alt="">
+        <a href="/">
+          <img :src="logo" alt="2nd Layer Staking Services">
           <div class="brand-subtitle">Multi-Ledger Staking Services</div>
         </a>
       </div>
@@ -15,7 +15,7 @@
           <!-- Links group -->
           <ul class="footer-links">
             <li>
-              <nuxt-link to="/cardano-staking-pool">Cardano Staking Pool</nuxt-link>
+              <nuxt-link to="/cardano-stake-pool">Cardano Staking Pool</nuxt-link>
             </li>
 
             <li>
