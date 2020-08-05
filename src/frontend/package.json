@@ -14,7 +14,7 @@
     "generate": "nuxt build && nuxt export"
   },
   "devDependencies": {
-    "@nuxt/core": "^2.14.0",
+    "@nuxt/core": "^2.14.1",
     "@nuxt/generator": "^2.14.1",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/sitemap": "^2.4.0",
