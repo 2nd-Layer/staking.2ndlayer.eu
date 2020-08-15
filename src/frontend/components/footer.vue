@@ -17,7 +17,6 @@
             <li>
               <nuxt-link to="/cardano-stake-pool">Cardano Stake Pool</nuxt-link>
             </li>
-
             <li>
               <nuxt-link to="/tezos-bakery">Tezos Bakery</nuxt-link>
             </li>
@@ -53,7 +52,8 @@
         </div>
       </div>
       <!-- Copyright -->
-      <p class="k-copyright">© 2020 | 2nd Layer. All Rights Reserved</p>
+      <p v-if="Date().getFullYear() > 2020" class="k-copyright">© 2020 – {{ new Date().getFullYear() }} | 2nd Layer. All Rights Reserved.</p>
+      <p v-else class="k-copyright">© 2020 | 2nd Layer. All Rights Reserved.</p>
       <br>
     </div>
 
