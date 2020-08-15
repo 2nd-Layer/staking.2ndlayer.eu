@@ -11,7 +11,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "serve": "nuxt serve",
-    "generate": "nuxt build && nuxt export"
+    "generate": "nuxt generate"
   },
   "devDependencies": {
     "@nuxt/core": "^2.14.1",
