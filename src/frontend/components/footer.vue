@@ -52,7 +52,7 @@
         </div>
       </div>
       <!-- Copyright -->
-      <p v-if="Date().getFullYear() > 2020" class="k-copyright">© 2020 – {{ new Date().getFullYear() }} | 2nd Layer. All Rights Reserved.</p>
+      <p v-if="new Date().getFullYear() > 2020" class="k-copyright">© 2020 – {{ new Date().getFullYear() }} | 2nd Layer. All Rights Reserved.</p>
       <p v-else class="k-copyright">© 2020 | 2nd Layer. All Rights Reserved.</p>
       <br>
     </div>
